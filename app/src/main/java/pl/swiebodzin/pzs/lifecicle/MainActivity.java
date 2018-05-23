@@ -5,48 +5,48 @@ import android.os.Bundle;
 import android.util.Log;
 
 public class MainActivity extends AppCompatActivity {
-
+    private static final String TAG = "aplikacja";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Log.d("life", "onCreate");
+        Log.d("life", "onCreate"); // tworzy logi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
     }
-
+// control + o pokazyje liste wszystkich metod
     @Override
     protected void onStart() {
-        Log.d("life", "onStart");
+        Log.d(TAG, "onStart");
         super.onStart();
     }
 
     @Override
     protected void onResume() {
-        Log.d("life" , "onResume");
+        Log.d(TAG , "onResume");
         super.onResume();
     }
 
     @Override
     protected void onPause() {
-        Log.d("life" , "onPause");
+        Log.d(TAG , "onPause");
         super.onPause();
     }
 
     @Override
     protected void onStop() {
-        Log.d("life" , "onStop");
+        Log.d(TAG , "onStop");
         super.onStop();
     }
 
     @Override
     protected void onRestart() {
-        Log.d("life", "onRestart");
+        Log.d(TAG, "onRestart");
         super.onRestart();
     }
 
     @Override
     protected void onDestroy() {
-        Log.d("life" , "onDestroy");
+        Log.d(TAG , "onDestroy");
         super.onDestroy();
     }
 }
